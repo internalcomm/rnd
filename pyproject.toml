@@ -1,7 +1,16 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
 [project]
-name = "test"
+name = "rnd"
 version = "0.1.0"
+description = "Your project description"
 requires-python = ">=3.8"
+dependencies = [
+    # Add your dependencies here
+    # e.g., "requests>=2.28.0",
+]
 
 [project.scripts]
-hello = "main:main"
+rnd = "main:main"  # This creates a command 'rnd' that runs the 'main' function from main.py
